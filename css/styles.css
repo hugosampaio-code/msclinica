@@ -247,12 +247,13 @@ ul {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .btn-primary:hover {
     background-color: var(--color-primary-dark);
     border-color: var(--color-primary-dark);
+    color: var(--color-white);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(212, 168, 75, 0.3);
 }
@@ -682,6 +683,11 @@ ul {
 .form-submit {
     text-align: center;
     margin-top: 30px;
+}
+
+.form-submit .btn {
+    padding: 12px 35px;
+    font-size: 15px;
 }
 
 .form-message {
