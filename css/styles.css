@@ -39,9 +39,16 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Widescreen support */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
 }
 
 /* ===============================================
@@ -252,7 +259,7 @@ ul {
 
 .btn-outline {
     background-color: transparent;
-    color: var(--color-white);
+    color: var(--color-primary);
     border-color: var(--color-primary);
 }
 
@@ -995,6 +1002,11 @@ ul {
     .form-row {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .form-submit .btn {
+        width: 100%;
+        justify-content: center;
     }
     
     /* Footer */
