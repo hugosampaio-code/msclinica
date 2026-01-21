@@ -1,0 +1,177 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Homepage Complete Template",
+  "type": "page",
+  "description": "Template completo da página principal com todas as secções integradas",
+  "content": {
+    "sections": [
+      {
+        "id": "hero_section",
+        "name": "Hero Section",
+        "reference": "sections/hero-section.json",
+        "description": "Secção hero com título 'O Luxo de se Sentir Bem', subtítulo e botões de ação"
+      },
+      {
+        "id": "about_section",
+        "name": "Sobre Nós",
+        "reference": "sections/about-section.json",
+        "description": "Secção sobre a MS Clínica com texto descritivo e placeholder para imagem"
+      },
+      {
+        "id": "services_section",
+        "name": "As Nossas Especialidades",
+        "reference": "sections/services-section.json",
+        "description": "4 cards com as principais especialidades: Medicina Estética, Dentária, Terapias e Medicina Integrativa"
+      },
+      {
+        "id": "features_section",
+        "name": "Porquê Escolher a MS Clínica",
+        "reference": "sections/features-section.json",
+        "description": "4 diferenciais: Equipa Especializada, Tecnologia Avançada, Atendimento Personalizado, Ambiente Premium"
+      },
+      {
+        "id": "testimonials_section",
+        "name": "O Que Dizem os Nossos Pacientes",
+        "reference": "sections/testimonials-section.json",
+        "description": "3 testemunhos de pacientes satisfeitos"
+      },
+      {
+        "id": "contact_form_section",
+        "name": "Marcar Consulta",
+        "reference": "sections/contact-form-section.json",
+        "description": "Formulário completo de marcação de consulta com todos os campos necessários"
+      }
+    ]
+  },
+  "page_settings": {
+    "page_template": "elementor_canvas",
+    "hide_title": "yes",
+    "custom_css": ""
+  },
+  "import_instructions": {
+    "pt": [
+      "1. Certifique-se de ter importado o header-template.json e footer-template.json primeiro",
+      "2. Crie uma nova página no WordPress",
+      "3. Defina o nome da página como 'Home' ou 'Início'",
+      "4. Edite a página com Elementor",
+      "5. Importe cada secção individualmente a partir da pasta sections/",
+      "6. Ou use este ficheiro como referência para criar a estrutura completa",
+      "7. Ajuste o conteúdo, imagens e links conforme necessário",
+      "8. Configure esta página como página inicial em Settings > Reading"
+    ],
+    "en": [
+      "1. Make sure you have imported header-template.json and footer-template.json first",
+      "2. Create a new page in WordPress",
+      "3. Set the page name as 'Home' or 'Início'",
+      "4. Edit the page with Elementor",
+      "5. Import each section individually from the sections/ folder",
+      "6. Or use this file as a reference to create the complete structure",
+      "7. Adjust content, images and links as needed",
+      "8. Set this page as the homepage in Settings > Reading"
+    ]
+  },
+  "elementor_structure": {
+    "page": [
+      {
+        "elType": "section",
+        "id": "hero",
+        "settings": {
+          "layout": "full_width",
+          "height": "viewport",
+          "background_background": "gradient"
+        }
+      },
+      {
+        "elType": "section",
+        "id": "about",
+        "settings": {
+          "layout": "boxed",
+          "background_background": "classic",
+          "background_color": "#FFFFFF"
+        }
+      },
+      {
+        "elType": "section",
+        "id": "services",
+        "settings": {
+          "layout": "boxed",
+          "background_background": "classic",
+          "background_color": "#F5F5F5"
+        }
+      },
+      {
+        "elType": "section",
+        "id": "features",
+        "settings": {
+          "layout": "boxed",
+          "background_background": "classic",
+          "background_color": "#FFFFFF"
+        }
+      },
+      {
+        "elType": "section",
+        "id": "testimonials",
+        "settings": {
+          "layout": "boxed",
+          "background_background": "classic",
+          "background_color": "#F5F5F5"
+        }
+      },
+      {
+        "elType": "section",
+        "id": "contact_form",
+        "settings": {
+          "layout": "boxed",
+          "background_background": "classic",
+          "background_color": "#FFFFFF"
+        }
+      }
+    ]
+  },
+  "customization_guide": {
+    "images": {
+      "about_section": "Substitua o placeholder por uma imagem de alta qualidade da clínica MS ou da equipa",
+      "hero_background": "Considere adicionar uma imagem de fundo subtil da clínica com overlay escuro",
+      "testimonials": "Adicione fotos dos pacientes (com autorização) para aumentar credibilidade"
+    },
+    "colors": {
+      "primary": "#D4A84B",
+      "primary_dark": "#B89239",
+      "dark": "#2D2D2D",
+      "text": "#555555",
+      "light_bg": "#F5F5F5"
+    },
+    "links": {
+      "internal": "Atualize todos os links #servicos, #sobre, #marcar-consulta para corresponder à estrutura final do site",
+      "external": "Configure links para redes sociais no footer",
+      "phone": "Tel: +351 220 925 250",
+      "email": "mailto:geral@msclinica.com"
+    },
+    "forms": {
+      "email_destination": "geral@msclinica.com",
+      "redirect_after_submit": "Considere adicionar uma página de agradecimento",
+      "integrations": "Configure integrações com CRM ou email marketing se necessário"
+    }
+  },
+  "seo_recommendations": {
+    "page_title": "MS Clínica - O Luxo de se Sentir Bem | Malheiro & Sampaio",
+    "meta_description": "MS Clínica oferece serviços premium de Medicina Estética, Dentária, Terapias e Medicina Integrativa na Maia, Porto. Equipa especializada e tecnologia avançada.",
+    "keywords": "clínica porto, medicina estética, medicina dentária, fisioterapia, nutrição, análises clínicas, maia",
+    "h1_tag": "O Luxo de se Sentir Bem",
+    "image_alt_texts": "Sempre adicione texto alternativo descritivo às imagens para SEO e acessibilidade"
+  },
+  "performance_tips": [
+    "Otimize todas as imagens antes de fazer upload (use WebP quando possível)",
+    "Use lazy loading para imagens abaixo da dobra",
+    "Minimize o uso de animações complexas em dispositivos móveis",
+    "Configure cache para melhorar tempo de carregamento",
+    "Teste a velocidade da página com Google PageSpeed Insights"
+  ],
+  "accessibility_notes": [
+    "Certifique-se de que todos os botões têm labels descritivos",
+    "Mantenha contraste adequado entre texto e fundo",
+    "Todos os campos de formulário devem ter labels visíveis",
+    "Teste a navegação por teclado",
+    "Adicione ARIA labels quando apropriado"
+  ]
+}

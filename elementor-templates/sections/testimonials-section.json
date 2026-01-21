@@ -1,0 +1,319 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Testimonials Section",
+  "type": "section",
+  "content": [
+    {
+      "id": "testimonials_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 0,
+          "bottom": 80,
+          "left": 0,
+          "sizes": {
+            "tablet": {
+              "top": 60,
+              "bottom": 60
+            },
+            "mobile": {
+              "top": 40,
+              "bottom": 40
+            }
+          }
+        }
+      },
+      "elements": [
+        {
+          "id": "testimonials_header",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "margin": {
+              "unit": "px",
+              "bottom": 60,
+              "sizes": {
+                "mobile": {
+                  "bottom": 40
+                }
+              }
+            }
+          },
+          "elements": [
+            {
+              "id": "testimonials_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "O Que Dizem os Nossos Pacientes",
+                "header_size": "h2",
+                "color": "#2D2D2D",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": {
+                    "tablet": 36,
+                    "mobile": 30
+                  }
+                },
+                "typography_font_weight": "600",
+                "align": "center",
+                "margin": {
+                  "unit": "px",
+                  "bottom": 15
+                }
+              }
+            },
+            {
+              "id": "testimonials_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "weight": {
+                  "unit": "px",
+                  "size": 4
+                },
+                "color": "#D4A84B",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "testimonials_grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "gap": {
+              "unit": "px",
+              "size": 30
+            }
+          },
+          "elements": [
+            {
+              "id": "testimonial_1",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "Excelente atendimento e profissionalismo. A equipa é muito atenciosa e os resultados superaram as minhas expectativas!",
+                "testimonial_name": "Maria Silva",
+                "testimonial_job": "",
+                "testimonial_image": {
+                  "url": ""
+                },
+                "testimonial_alignment": "center",
+                "star_rating": 5,
+                "star_style": "star_fontawesome",
+                "stars_color": "#D4A84B",
+                "stars_unmarked_color": "#E0E0E0",
+                "stars_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "content_text_color": "#555555",
+                "content_typography_typography": "custom",
+                "content_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "content_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7
+                },
+                "content_typography_font_style": "italic",
+                "name_text_color": "#2D2D2D",
+                "name_typography_typography": "custom",
+                "name_typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "name_typography_font_weight": "600",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 35,
+                  "right": 35,
+                  "bottom": 35,
+                  "left": 35
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 5,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.08)"
+                },
+                "hover_animation": "float",
+                "width": {
+                  "unit": "%",
+                  "size": 32
+                }
+              }
+            },
+            {
+              "id": "testimonial_2",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "Clínica moderna com equipamentos de topo. Sinto-me sempre bem cuidada e em boas mãos.",
+                "testimonial_name": "João Santos",
+                "testimonial_job": "",
+                "testimonial_image": {
+                  "url": ""
+                },
+                "testimonial_alignment": "center",
+                "star_rating": 5,
+                "star_style": "star_fontawesome",
+                "stars_color": "#D4A84B",
+                "stars_unmarked_color": "#E0E0E0",
+                "stars_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "content_text_color": "#555555",
+                "content_typography_typography": "custom",
+                "content_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "content_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7
+                },
+                "content_typography_font_style": "italic",
+                "name_text_color": "#2D2D2D",
+                "name_typography_typography": "custom",
+                "name_typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "name_typography_font_weight": "600",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 35,
+                  "right": 35,
+                  "bottom": 35,
+                  "left": 35
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 5,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.08)"
+                },
+                "hover_animation": "float",
+                "width": {
+                  "unit": "%",
+                  "size": 32
+                }
+              }
+            },
+            {
+              "id": "testimonial_3",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "Recomendo vivamente! Ambiente acolhedor e tratamentos de qualidade excecional.",
+                "testimonial_name": "Ana Costa",
+                "testimonial_job": "",
+                "testimonial_image": {
+                  "url": ""
+                },
+                "testimonial_alignment": "center",
+                "star_rating": 5,
+                "star_style": "star_fontawesome",
+                "stars_color": "#D4A84B",
+                "stars_unmarked_color": "#E0E0E0",
+                "stars_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "content_text_color": "#555555",
+                "content_typography_typography": "custom",
+                "content_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "content_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7
+                },
+                "content_typography_font_style": "italic",
+                "name_text_color": "#2D2D2D",
+                "name_typography_typography": "custom",
+                "name_typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "name_typography_font_weight": "600",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 35,
+                  "right": 35,
+                  "bottom": 35,
+                  "left": 35
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 5,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.08)"
+                },
+                "hover_animation": "float",
+                "width": {
+                  "unit": "%",
+                  "size": 32
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "testimonials_grid": {
+        "flex_direction": "column"
+      },
+      "testimonial_width": "100%"
+    }
+  },
+  "notes": "Testimonial widget requer Elementor Pro. Se não tiver Pro, pode usar icon-box ou text-editor widgets como alternativa."
+}

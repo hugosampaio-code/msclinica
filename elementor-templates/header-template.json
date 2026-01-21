@@ -1,0 +1,279 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Header Template",
+  "type": "header",
+  "content": [
+    {
+      "id": "header_section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 2,
+          "blur": 10,
+          "spread": 0,
+          "color": "rgba(0,0,0,0.1)"
+        },
+        "position": "fixed",
+        "z_index": 1000,
+        "padding": {
+          "unit": "px",
+          "top": 15,
+          "right": 0,
+          "bottom": 15,
+          "left": 0
+        }
+      },
+      "elements": [
+        {
+          "id": "header_container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "flex_justify_content": "space-between",
+            "flex_align_items": "center",
+            "gap": {
+              "unit": "px",
+              "size": 30
+            }
+          },
+          "elements": [
+            {
+              "id": "logo_section",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_align_items": "baseline",
+                "gap": {
+                  "unit": "px",
+                  "size": 5
+                }
+              },
+              "elements": [
+                {
+                  "id": "logo_text_ms",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "MS",
+                    "header_size": "h1",
+                    "color": "#D4A84B",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 32
+                    },
+                    "typography_font_weight": "700",
+                    "link": {
+                      "url": "#home",
+                      "is_external": false
+                    }
+                  }
+                },
+                {
+                  "id": "logo_text_clinica",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Clínica",
+                    "header_size": "h1",
+                    "color": "#2D2D2D",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_weight": "700",
+                    "link": {
+                      "url": "#home",
+                      "is_external": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "navigation_menu",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "layout": "horizontal",
+                "pointer": "underline",
+                "animation_line": "slide",
+                "submenu_icon": {
+                  "value": "fas fa-chevron-down",
+                  "library": "fa-solid"
+                },
+                "menu": "primary",
+                "menu_items": [
+                  {
+                    "text": "HOME",
+                    "url": "#home"
+                  },
+                  {
+                    "text": "SERVIÇOS",
+                    "url": "#servicos",
+                    "has_submenu": true,
+                    "submenu_type": "mega",
+                    "submenu": [
+                      {
+                        "column_title": "Medicina Estética",
+                        "items": [
+                          { "text": "Preenchimento Labial", "url": "#servicos" },
+                          { "text": "Toxina Botulínica (Botox)", "url": "#servicos" },
+                          { "text": "Escleroterapia", "url": "#servicos" },
+                          { "text": "Light Peeling", "url": "#servicos" },
+                          { "text": "Microneedling", "url": "#servicos" },
+                          { "text": "Intralipoterapia", "url": "#servicos" },
+                          { "text": "Mesoterapia", "url": "#servicos" },
+                          { "text": "Bioestimuladores", "url": "#servicos" },
+                          { "text": "Hiperhidrose", "url": "#servicos" }
+                        ]
+                      },
+                      {
+                        "column_title": "Medicina Dentária",
+                        "items": [
+                          { "text": "Implantologia", "url": "#servicos" },
+                          { "text": "Ortodontia", "url": "#servicos" },
+                          { "text": "Endodontia", "url": "#servicos" },
+                          { "text": "Periodontologia", "url": "#servicos" },
+                          { "text": "Invisalign®", "url": "#servicos" },
+                          { "text": "Cirurgia Oral", "url": "#servicos" },
+                          { "text": "Dentisteria", "url": "#servicos" },
+                          { "text": "Branqueamento", "url": "#servicos" },
+                          { "text": "Prótese Removível", "url": "#servicos" },
+                          { "text": "Prótese Fixa", "url": "#servicos" }
+                        ]
+                      },
+                      {
+                        "column_title": "Terapias & Especialidades",
+                        "items": [
+                          { "text": "Transplantes Capilares", "url": "#servicos" },
+                          { "text": "Medicina Tradicional Chinesa", "url": "#servicos" },
+                          { "text": "Terapia da Fala", "url": "#servicos" },
+                          { "text": "Posturologia", "url": "#servicos" },
+                          { "text": "Psicologia Clínica", "url": "#servicos" },
+                          { "text": "Fisioterapia Avançada", "url": "#servicos" },
+                          { "text": "Nutrição", "url": "#servicos" }
+                        ]
+                      },
+                      {
+                        "column_title": "Medicina Integrativa",
+                        "items": [
+                          { "text": "Medicina Ortomolecular", "url": "#servicos" },
+                          { "text": "Soroterapia micronutrientes/homeopáticos", "url": "#servicos" },
+                          { "text": "Mesoterapia Homeopática", "url": "#servicos" },
+                          { "text": "Microscopia Campo Escuro", "url": "#servicos" },
+                          { "text": "Auto-hemoterapia", "url": "#servicos" },
+                          { "text": "Análises Clínicas", "url": "#servicos" }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "BLOG",
+                    "url": "#blog"
+                  },
+                  {
+                    "text": "CONTACTOS",
+                    "url": "#contactos"
+                  }
+                ],
+                "color_text_color": "#2D2D2D",
+                "color_text_color_hover": "#D4A84B",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0.5
+                },
+                "submenu_background_color": "#FFFFFF",
+                "submenu_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 10,
+                  "blur": 40,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.15)"
+                },
+                "submenu_padding": {
+                  "unit": "px",
+                  "top": 40,
+                  "right": 40,
+                  "bottom": 40,
+                  "left": 40
+                }
+              }
+            },
+            {
+              "id": "cta_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Marcar Consulta",
+                "link": {
+                  "url": "#marcar-consulta",
+                  "is_external": false
+                },
+                "button_type": "primary",
+                "button_background_color": "#D4A84B",
+                "button_text_color": "#2D2D2D",
+                "button_background_hover_color": "#B89239",
+                "button_hover_text_color": "#FFFFFF",
+                "button_border_radius": {
+                  "unit": "px",
+                  "size": 50
+                },
+                "button_padding": {
+                  "unit": "px",
+                  "top": 12,
+                  "right": 30,
+                  "bottom": 12,
+                  "left": 30
+                },
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0.5
+                },
+                "hover_animation": "grow",
+                "button_box_shadow_box_shadow_type": {
+                  "hover": "yes"
+                },
+                "button_box_shadow_box_shadow": {
+                  "hover": {
+                    "horizontal": 0,
+                    "vertical": 5,
+                    "blur": 15,
+                    "spread": 0,
+                    "color": "rgba(212,168,75,0.3)"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "notes": "Em dispositivos móveis (< 768px), o menu de navegação deve ser convertido em menu hamburger. O botão CTA pode ser ocultado ou movido para dentro do menu mobile."
+    }
+  }
+}

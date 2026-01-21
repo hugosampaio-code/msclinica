@@ -1,0 +1,400 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Features Section (Diferenciais)",
+  "type": "section",
+  "content": [
+    {
+      "id": "features_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 0,
+          "bottom": 80,
+          "left": 0,
+          "sizes": {
+            "tablet": {
+              "top": 60,
+              "bottom": 60
+            },
+            "mobile": {
+              "top": 40,
+              "bottom": 40
+            }
+          }
+        }
+      },
+      "elements": [
+        {
+          "id": "features_header",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "margin": {
+              "unit": "px",
+              "bottom": 60,
+              "sizes": {
+                "mobile": {
+                  "bottom": 40
+                }
+              }
+            }
+          },
+          "elements": [
+            {
+              "id": "features_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Porquê Escolher a MS Clínica?",
+                "header_size": "h2",
+                "color": "#2D2D2D",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": {
+                    "tablet": 36,
+                    "mobile": 30
+                  }
+                },
+                "typography_font_weight": "600",
+                "align": "center",
+                "margin": {
+                  "unit": "px",
+                  "bottom": 15
+                }
+              }
+            },
+            {
+              "id": "features_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "weight": {
+                  "unit": "px",
+                  "size": 4
+                },
+                "color": "#D4A84B",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "features_grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "gap": {
+              "unit": "px",
+              "size": 40
+            }
+          },
+          "elements": [
+            {
+              "id": "feature_card_1",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-user-md",
+                  "library": "fa-solid"
+                },
+                "title_text": "Equipa Especializada",
+                "description_text": "Profissionais altamente qualificados e experientes em cada área de especialidade.",
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_secondary_color": "#B89239",
+                "icon_gradient_type": "linear",
+                "icon_gradient_angle": {
+                  "unit": "deg",
+                  "size": 135
+                },
+                "icon_size": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 30,
+                  "right": 20,
+                  "bottom": 30,
+                  "left": 20
+                },
+                "hover_animation": "grow",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            },
+            {
+              "id": "feature_card_2",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-microscope",
+                  "library": "fa-solid"
+                },
+                "title_text": "Tecnologia Avançada",
+                "description_text": "Equipamentos de última geração para diagnósticos precisos e tratamentos eficazes.",
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_secondary_color": "#B89239",
+                "icon_gradient_type": "linear",
+                "icon_gradient_angle": {
+                  "unit": "deg",
+                  "size": 135
+                },
+                "icon_size": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 30,
+                  "right": 20,
+                  "bottom": 30,
+                  "left": 20
+                },
+                "hover_animation": "grow",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            },
+            {
+              "id": "feature_card_3",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-hands-helping",
+                  "library": "fa-solid"
+                },
+                "title_text": "Atendimento Personalizado",
+                "description_text": "Cada paciente é único e recebe um plano de tratamento adaptado às suas necessidades.",
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_secondary_color": "#B89239",
+                "icon_gradient_type": "linear",
+                "icon_gradient_angle": {
+                  "unit": "deg",
+                  "size": 135
+                },
+                "icon_size": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 30,
+                  "right": 20,
+                  "bottom": 30,
+                  "left": 20
+                },
+                "hover_animation": "grow",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            },
+            {
+              "id": "feature_card_4",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-gem",
+                  "library": "fa-solid"
+                },
+                "title_text": "Ambiente Premium",
+                "description_text": "Instalações modernas e confortáveis para uma experiência de excelência.",
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_secondary_color": "#B89239",
+                "icon_gradient_type": "linear",
+                "icon_gradient_angle": {
+                  "unit": "deg",
+                  "size": 135
+                },
+                "icon_size": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 30
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 30,
+                  "right": 20,
+                  "bottom": 30,
+                  "left": 20
+                },
+                "hover_animation": "grow",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "features_grid": {
+        "flex_direction": "column"
+      },
+      "card_width": "100%"
+    }
+  }
+}

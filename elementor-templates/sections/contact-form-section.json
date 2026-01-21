@@ -1,0 +1,320 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Contact Form Section",
+  "type": "section",
+  "content": [
+    {
+      "id": "contact_form_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 0,
+          "bottom": 80,
+          "left": 0,
+          "sizes": {
+            "tablet": {
+              "top": 60,
+              "bottom": 60
+            },
+            "mobile": {
+              "top": 40,
+              "bottom": 40
+            }
+          }
+        }
+      },
+      "elements": [
+        {
+          "id": "form_header",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "margin": {
+              "unit": "px",
+              "bottom": 60,
+              "sizes": {
+                "mobile": {
+                  "bottom": 40
+                }
+              }
+            }
+          },
+          "elements": [
+            {
+              "id": "form_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Marcar Consulta",
+                "header_size": "h2",
+                "color": "#2D2D2D",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": {
+                    "tablet": 36,
+                    "mobile": 30
+                  }
+                },
+                "typography_font_weight": "600",
+                "align": "center",
+                "margin": {
+                  "unit": "px",
+                  "bottom": 15
+                }
+              }
+            },
+            {
+              "id": "form_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "weight": {
+                  "unit": "px",
+                  "size": 4
+                },
+                "color": "#D4A84B",
+                "align": "center",
+                "margin": {
+                  "unit": "px",
+                  "bottom": 20
+                }
+              }
+            },
+            {
+              "id": "form_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Preencha o formulário e entraremos em contacto consigo",
+                "text_color": "#555555",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "form_wrapper",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "max_width": {
+              "unit": "px",
+              "size": 800
+            }
+          },
+          "elements": [
+            {
+              "id": "appointment_form",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "Marcação de Consulta",
+                "form_fields": [
+                  {
+                    "field_type": "text",
+                    "field_label": "Nome Completo",
+                    "field_id": "nome",
+                    "required": "yes",
+                    "placeholder": "",
+                    "width": "50",
+                    "width_tablet": "100",
+                    "width_mobile": "100"
+                  },
+                  {
+                    "field_type": "email",
+                    "field_label": "Email",
+                    "field_id": "email",
+                    "required": "yes",
+                    "placeholder": "",
+                    "width": "50",
+                    "width_tablet": "100",
+                    "width_mobile": "100"
+                  },
+                  {
+                    "field_type": "tel",
+                    "field_label": "Telefone",
+                    "field_id": "telefone",
+                    "required": "yes",
+                    "placeholder": "",
+                    "width": "50",
+                    "width_tablet": "100",
+                    "width_mobile": "100"
+                  },
+                  {
+                    "field_type": "select",
+                    "field_label": "Especialidade",
+                    "field_id": "especialidade",
+                    "required": "yes",
+                    "field_options": "Selecione uma especialidade\n--- Medicina Estética ---\nPreenchimento Labial\nToxina Botulínica (Botox)\nEscleroterapia\nLight Peeling\nMicroneedling\nIntralipoterapia\nMesoterapia\nBioestimuladores\nHiperhidrose\n--- Medicina Dentária ---\nImplantologia\nOrtodontia\nEndodontia\nPeriodontologia\nInvisalign®\nCirurgia Oral\nDentisteria\nBranqueamento\nPrótese Removível\nPrótese Fixa\n--- Terapias & Especialidades ---\nTransplantes Capilares\nMedicina Tradicional Chinesa\nTerapia da Fala\nPosturologia\nPsicologia Clínica\nFisioterapia Avançada\nNutrição\n--- Medicina Integrativa ---\nMedicina Ortomolecular\nSoroterapia micronutrientes/homeopáticos\nMesoterapia Homeopática\nMicroscopia Campo Escuro\nAuto-hemoterapia\nAnálises Clínicas",
+                    "width": "50",
+                    "width_tablet": "100",
+                    "width_mobile": "100"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Mensagem",
+                    "field_id": "mensagem",
+                    "required": "no",
+                    "placeholder": "",
+                    "rows": 5,
+                    "width": "100"
+                  }
+                ],
+                "button_text": "Enviar Pedido",
+                "button_icon": {
+                  "value": "far fa-paper-plane",
+                  "library": "fa-regular"
+                },
+                "button_icon_align": "left",
+                "button_size": "lg",
+                "button_align": "center",
+                "button_width": "auto",
+                "submit_actions": [
+                  "email"
+                ],
+                "email_to": "geral@msclinica.com",
+                "email_subject": "Nova Marcação de Consulta - MS Clínica",
+                "email_content": "[remote_ip] [date] [time]\n\nNome: [field id=\"nome\"]\nEmail: [field id=\"email\"]\nTelefone: [field id=\"telefone\"]\nEspecialidade: [field id=\"especialidade\"]\n\nMensagem:\n[field id=\"mensagem\"]",
+                "email_from": "[field id=\"email\"]",
+                "email_from_name": "[field id=\"nome\"]",
+                "email_reply_to": "[field id=\"email\"]",
+                "success_message": "Obrigado! O seu pedido foi enviado com sucesso. Entraremos em contacto em breve.",
+                "error_message": "Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.",
+                "required_field_message": "Este campo é obrigatório.",
+                "invalid_message": "Por favor, verifique os campos do formulário.",
+                "form_background_color": "#FFFFFF",
+                "form_border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "form_padding": {
+                  "unit": "px",
+                  "top": 50,
+                  "right": 50,
+                  "bottom": 50,
+                  "left": 50,
+                  "sizes": {
+                    "mobile": {
+                      "top": 30,
+                      "right": 20,
+                      "bottom": 30,
+                      "left": 20
+                    }
+                  }
+                },
+                "form_box_shadow_box_shadow_type": "yes",
+                "form_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 10,
+                  "blur": 40,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "field_label_color": "#2D2D2D",
+                "field_label_typography_typography": "custom",
+                "field_label_typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "field_label_typography_font_weight": "600",
+                "field_text_color": "#2D2D2D",
+                "field_typography_typography": "custom",
+                "field_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "field_background_color": "#FFFFFF",
+                "field_border_color": "#F5F5F5",
+                "field_border_width": {
+                  "unit": "px",
+                  "size": 2
+                },
+                "field_border_radius": {
+                  "unit": "px",
+                  "size": 5
+                },
+                "field_padding": {
+                  "unit": "px",
+                  "top": 12,
+                  "right": 15,
+                  "bottom": 12,
+                  "left": 15
+                },
+                "field_focus_border_color": "#D4A84B",
+                "button_background_color": "#D4A84B",
+                "button_text_color": "#2D2D2D",
+                "button_hover_background_color": "#B89239",
+                "button_hover_text_color": "#FFFFFF",
+                "button_border_radius": {
+                  "unit": "px",
+                  "size": 50
+                },
+                "button_padding": {
+                  "unit": "px",
+                  "top": 12,
+                  "right": 35,
+                  "bottom": 12,
+                  "left": 35
+                },
+                "button_typography_typography": "custom",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "button_typography_font_weight": "600",
+                "button_typography_text_transform": "uppercase",
+                "button_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0.5
+                },
+                "button_box_shadow_box_shadow_type": {
+                  "hover": "yes"
+                },
+                "button_box_shadow_box_shadow": {
+                  "hover": {
+                    "horizontal": 0,
+                    "vertical": 5,
+                    "blur": 15,
+                    "spread": 0,
+                    "color": "rgba(212,168,75,0.3)"
+                  }
+                },
+                "messages_success_color": "#155724",
+                "messages_success_background_color": "#d4edda",
+                "messages_success_border_color": "#c3e6cb",
+                "messages_error_color": "#721c24",
+                "messages_error_background_color": "#f8d7da",
+                "messages_error_border_color": "#f5c6cb"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "form_fields_width": "100%",
+      "form_padding": "30px 20px"
+    }
+  },
+  "notes": "O widget Form requer Elementor Pro. Configure o email de destino (email_to) e ajuste as opções de especialidade conforme necessário. Considere adicionar integração com serviços como Mailchimp ou Google Sheets para backup dos dados."
+}
