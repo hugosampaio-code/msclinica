@@ -624,6 +624,117 @@ ul {
 }
 
 /* ===============================================
+   Blog Preview Section
+   =============================================== */
+.blog-preview {
+    background-color: var(--color-white);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.blog-card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.blog-image .image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-light-bg);
+    border-bottom: 3px solid var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+}
+
+.blog-image .image-placeholder i {
+    font-size: 60px;
+    color: var(--color-primary);
+}
+
+.blog-content {
+    padding: 30px;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: var(--color-text);
+}
+
+.blog-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-meta i {
+    color: var(--color-primary);
+}
+
+.blog-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+    line-height: 1.4;
+}
+
+.blog-excerpt {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.blog-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: var(--transition);
+}
+
+.blog-link:hover {
+    color: var(--color-primary-dark);
+}
+
+.blog-link i {
+    transition: var(--transition);
+}
+
+.blog-link:hover i {
+    transform: translateX(5px);
+}
+
+.blog-cta {
+    text-align: center;
+}
+
+/* ===============================================
    Marcar Consulta (Appointment Form) Section
    =============================================== */
 .form-wrapper {

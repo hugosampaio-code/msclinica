@@ -1,0 +1,642 @@
+/* ===============================================
+   MS Clínica - Responsive Media Queries
+   Breakpoints: 320px, 768px, 992px, 1200px, 1920px+
+   =============================================== */
+
+/* ===============================================
+   Widescreen (1920px and above)
+   =============================================== */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    .hero-title {
+        font-size: 72px;
+    }
+    
+    .hero-subtitle {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 48px;
+    }
+    
+    .section {
+        padding: 100px 0;
+    }
+}
+
+/* ===============================================
+   Desktop (1200px to 1919px)
+   =============================================== */
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/* ===============================================
+   Large Tablet / Small Desktop (992px to 1199px)
+   =============================================== */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .mega-menu {
+        min-width: 800px;
+    }
+}
+
+/* ===============================================
+   Tablet (768px to 991px)
+   =============================================== */
+@media (max-width: 992px) {
+    /* Container */
+    .container {
+        max-width: 720px;
+        padding: 0 25px;
+    }
+    
+    /* Navigation */
+    .mega-menu {
+        min-width: 700px;
+    }
+    
+    .mega-menu-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 85vh;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .section-header {
+        margin-bottom: 50px;
+    }
+    
+    /* Sobre Nós */
+    .sobre-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Especialidades Grid */
+    .especialidades-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    /* Diferenciais */
+    .diferenciais-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    /* Blog Grid */
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+/* ===============================================
+   Mobile (768px and below)
+   =============================================== */
+@media (max-width: 768px) {
+    /* Container */
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    /* Navigation */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--color-white);
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        align-items: flex-start;
+        transition: var(--transition);
+        overflow-y: auto;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item-dropdown .mega-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        min-width: auto;
+        padding: 20px 0;
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .nav-item-dropdown.active .mega-menu {
+        display: block;
+    }
+    
+    .mega-menu-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .mega-column h3 {
+        font-size: 15px;
+    }
+    
+    .mega-column ul li a {
+        font-size: 13px;
+    }
+    
+    .nav-wrapper .btn-primary {
+        display: none;
+    }
+    
+    /* Logo */
+    .logo-text {
+        font-size: 28px;
+    }
+    
+    .logo-subtext {
+        font-size: 16px;
+    }
+    
+    /* Hero */
+    .hero {
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .section-description {
+        font-size: 16px;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    /* Cards & Grids */
+    .especialidades-grid,
+    .diferenciais-grid,
+    .testemunhos-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Icon Boxes */
+    .icon-box-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .icon-box-icon i {
+        font-size: 32px;
+    }
+    
+    /* Forms */
+    .appointment-form,
+    .contact-form {
+        padding: 30px 20px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .form-submit .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Footer */
+    .footer {
+        padding-top: 50px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-logo .logo-text {
+        font-size: 32px;
+    }
+    
+    .footer-logo .logo-subtext {
+        font-size: 18px;
+    }
+    
+    /* Back to Top */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    /* Service Pages */
+    .service-sidebar {
+        margin-top: 40px;
+    }
+    
+    /* Blog */
+    .blog-sidebar {
+        margin-top: 40px;
+    }
+    
+    .blog-image {
+        height: 200px;
+    }
+    
+    /* Stats */
+    .stat-number {
+        font-size: 36px;
+    }
+    
+    .stat-label {
+        font-size: 14px;
+    }
+}
+
+/* ===============================================
+   Small Mobile (480px and below)
+   =============================================== */
+@media (max-width: 480px) {
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Logo */
+    .logo-text {
+        font-size: 24px;
+    }
+    
+    .logo-subtext {
+        font-size: 14px;
+    }
+    
+    /* Hero */
+    .hero {
+        height: 60vh;
+        min-height: 450px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .section-description {
+        font-size: 15px;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+    
+    .btn-lg {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+    
+    /* Cards */
+    .especialidade-card,
+    .testemunho-card {
+        padding: 25px 20px;
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .card-icon i {
+        font-size: 32px;
+    }
+    
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .card-description {
+        font-size: 14px;
+    }
+    
+    /* Icon Boxes */
+    .diferencial-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .diferencial-icon i {
+        font-size: 36px;
+    }
+    
+    .diferencial-card h3 {
+        font-size: 18px;
+    }
+    
+    .diferencial-card p {
+        font-size: 14px;
+    }
+    
+    /* Forms */
+    .appointment-form,
+    .contact-form {
+        padding: 25px 15px;
+    }
+    
+    .form-group label {
+        font-size: 13px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding-top: 40px;
+    }
+    
+    .footer-logo .logo-text {
+        font-size: 28px;
+    }
+    
+    .footer-logo .logo-subtext {
+        font-size: 16px;
+    }
+    
+    .footer-title {
+        font-size: 16px;
+    }
+    
+    .footer-links a,
+    .footer-contact li {
+        font-size: 13px;
+    }
+    
+    /* Blog */
+    .blog-title {
+        font-size: 18px;
+    }
+    
+    .blog-excerpt {
+        font-size: 14px;
+    }
+    
+    .blog-meta {
+        font-size: 12px;
+    }
+    
+    /* Stats */
+    .stat-number {
+        font-size: 32px;
+    }
+    
+    .stat-label {
+        font-size: 13px;
+    }
+    
+    /* Timeline */
+    .timeline::before {
+        left: 10px;
+    }
+    
+    .timeline-item {
+        padding-left: 45px;
+    }
+    
+    .timeline-item::before {
+        left: 1px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Social Share */
+    .social-share a {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+/* ===============================================
+   Extra Small Mobile (320px)
+   =============================================== */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 22px;
+    }
+    
+    .section-description {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    
+    .btn-lg {
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+}
+
+/* ===============================================
+   Landscape Orientation (Mobile)
+   =============================================== */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+}
+
+/* ===============================================
+   Print Styles
+   =============================================== */
+@media print {
+    .header,
+    .footer,
+    .back-to-top,
+    .mobile-menu-toggle,
+    .btn,
+    .mega-menu,
+    .social-share,
+    .form-wrapper {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+}
+
+/* ===============================================
+   Touch Device Optimizations
+   =============================================== */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .btn:hover,
+    .card:hover,
+    .especialidade-card:hover,
+    .testemunho-card:hover {
+        transform: none;
+    }
+    
+    /* Larger touch targets */
+    .nav-link,
+    .btn,
+    .footer-links a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    /* Disable parallax on mobile for performance */
+    .hero {
+        transform: none !important;
+    }
+}
+
+/* ===============================================
+   Reduced Motion (Accessibility)
+   =============================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===============================================
+   Dark Mode (Future Implementation)
+   =============================================== */
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles can be added here if needed */
+    /* Currently not implemented to maintain brand consistency */
+}
