@@ -1,0 +1,517 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Footer Template",
+  "type": "footer",
+  "content": [
+    {
+      "id": "footer_main_section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#2D2D2D",
+        "padding": {
+          "unit": "px",
+          "top": 60,
+          "right": 0,
+          "bottom": 40,
+          "left": 0
+        }
+      },
+      "elements": [
+        {
+          "id": "footer_columns",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "gap": {
+              "unit": "px",
+              "size": 40
+            }
+          },
+          "elements": [
+            {
+              "id": "footer_column_1",
+              "elType": "container",
+              "settings": {
+                "flex_basis": "25%",
+                "flex_direction": "column",
+                "gap": {
+                  "unit": "px",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "footer_logo_container",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row",
+                    "flex_align_items": "baseline",
+                    "gap": {
+                      "unit": "px",
+                      "size": 5
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "footer_logo_ms",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "MS",
+                        "header_size": "h3",
+                        "color": "#D4A84B",
+                        "typography_typography": "custom",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 36
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    },
+                    {
+                      "id": "footer_logo_clinica",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Clínica",
+                        "header_size": "h3",
+                        "color": "#F5F5F5",
+                        "typography_typography": "custom",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 20
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "footer_description",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "Especialistas em Saúde, Beleza e Bem-Estar. O luxo de se sentir bem.",
+                    "text_color": "#F5F5F5",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7
+                    }
+                  }
+                },
+                {
+                  "id": "footer_social_icons",
+                  "elType": "widget",
+                  "widgetType": "social-icons",
+                  "settings": {
+                    "social_icon_list": [
+                      {
+                        "social": "facebook",
+                        "link": {
+                          "url": "#",
+                          "is_external": true
+                        }
+                      },
+                      {
+                        "social": "instagram",
+                        "link": {
+                          "url": "#",
+                          "is_external": true
+                        }
+                      },
+                      {
+                        "social": "linkedin",
+                        "link": {
+                          "url": "#",
+                          "is_external": true
+                        }
+                      }
+                    ],
+                    "shape": "circle",
+                    "icon_color": "#FFFFFF",
+                    "icon_background_color": "#D4A84B",
+                    "icon_background_hover_color": "#B89239",
+                    "icon_size": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "icon_padding": {
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 15
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer_column_2",
+              "elType": "container",
+              "settings": {
+                "flex_basis": "25%",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "footer_links_title",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Links Rápidos",
+                    "header_size": "h4",
+                    "color": "#D4A84B",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_text_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.5
+                    },
+                    "margin": {
+                      "unit": "px",
+                      "bottom": 20
+                    }
+                  }
+                },
+                {
+                  "id": "footer_quick_links",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Home",
+                        "link": {
+                          "url": "#home"
+                        }
+                      },
+                      {
+                        "text": "Sobre Nós",
+                        "link": {
+                          "url": "#sobre"
+                        }
+                      },
+                      {
+                        "text": "Serviços",
+                        "link": {
+                          "url": "#servicos"
+                        }
+                      },
+                      {
+                        "text": "Blog",
+                        "link": {
+                          "url": "#blog"
+                        }
+                      },
+                      {
+                        "text": "Marcar Consulta",
+                        "link": {
+                          "url": "#marcar-consulta"
+                        }
+                      }
+                    ],
+                    "icon": "none",
+                    "text_color": "#F5F5F5",
+                    "text_color_hover": "#D4A84B",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "space_between": {
+                      "unit": "px",
+                      "size": 12
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer_column_3",
+              "elType": "container",
+              "settings": {
+                "flex_basis": "25%",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "footer_specialties_title",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Especialidades",
+                    "header_size": "h4",
+                    "color": "#D4A84B",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_text_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.5
+                    },
+                    "margin": {
+                      "unit": "px",
+                      "bottom": 20
+                    }
+                  }
+                },
+                {
+                  "id": "footer_specialties_list",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Medicina Estética",
+                        "link": {
+                          "url": "#servicos"
+                        }
+                      },
+                      {
+                        "text": "Medicina Dentária",
+                        "link": {
+                          "url": "#servicos"
+                        }
+                      },
+                      {
+                        "text": "Fisioterapia",
+                        "link": {
+                          "url": "#servicos"
+                        }
+                      },
+                      {
+                        "text": "Nutrição",
+                        "link": {
+                          "url": "#servicos"
+                        }
+                      },
+                      {
+                        "text": "Análises Clínicas",
+                        "link": {
+                          "url": "#servicos"
+                        }
+                      }
+                    ],
+                    "icon": "none",
+                    "text_color": "#F5F5F5",
+                    "text_color_hover": "#D4A84B",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "space_between": {
+                      "unit": "px",
+                      "size": 12
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer_column_4",
+              "elType": "container",
+              "settings": {
+                "flex_basis": "25%",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "footer_contact_title",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Contactos",
+                    "header_size": "h4",
+                    "color": "#D4A84B",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_text_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.5
+                    },
+                    "margin": {
+                      "unit": "px",
+                      "bottom": 20
+                    }
+                  }
+                },
+                {
+                  "id": "footer_contact_list",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Via Eng. Belmiro Mendes de Azevedo nº11, 4475-401 Maia, Porto",
+                        "icon": {
+                          "value": "fas fa-map-marker-alt",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "text": "+351 220 925 250",
+                        "icon": {
+                          "value": "fas fa-phone",
+                          "library": "fa-solid"
+                        },
+                        "link": {
+                          "url": "tel:+351220925250"
+                        }
+                      },
+                      {
+                        "text": "geral@msclinica.com",
+                        "icon": {
+                          "value": "fas fa-envelope",
+                          "library": "fa-solid"
+                        },
+                        "link": {
+                          "url": "mailto:geral@msclinica.com"
+                        }
+                      },
+                      {
+                        "text": "Seg-Sex: 09:00–18:00\nAlmoço: 13:00–14:00\nAnálises: Seg-Sáb 08:00–12:00",
+                        "icon": {
+                          "value": "fas fa-clock",
+                          "library": "fa-solid"
+                        }
+                      }
+                    ],
+                    "icon_color": "#D4A84B",
+                    "text_color": "#F5F5F5",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.6
+                    },
+                    "space_between": {
+                      "unit": "px",
+                      "size": 15
+                    },
+                    "icon_size": {
+                      "unit": "px",
+                      "size": 18
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer_map_section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#2D2D2D",
+        "padding": {
+          "unit": "px",
+          "top": 30,
+          "right": 0,
+          "bottom": 30,
+          "left": 0
+        }
+      },
+      "elements": [
+        {
+          "id": "map_container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed"
+          },
+          "elements": [
+            {
+              "id": "map_placeholder",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='background-color: #333333; border: 2px dashed #D4A84B; border-radius: 10px; padding: 60px 40px; text-align: center;'><i class='fas fa-map-marked-alt' style='font-size: 60px; color: #D4A84B; margin-bottom: 15px; display: block;'></i><p style='color: #F5F5F5;'>Mapa Google (incorporar iframe com localização da clínica)</p><p style='color: #F5F5F5; font-size: 12px; margin-top: 10px;'>Para adicionar mapa real: Elementor > Google Maps widget</p></div>",
+                "text_color": "#F5F5F5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer_copyright_section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#333333",
+        "padding": {
+          "unit": "px",
+          "top": 25,
+          "right": 0,
+          "bottom": 25,
+          "left": 0
+        }
+      },
+      "elements": [
+        {
+          "id": "copyright_container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_justify_content": "center"
+          },
+          "elements": [
+            {
+              "id": "copyright_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "&copy; 2024 MS Clínica - Malheiro & Sampaio. Todos os direitos reservados.",
+                "text_color": "#F5F5F5",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "footer_columns": {
+        "flex_direction": "column"
+      },
+      "footer_column_basis": "100%"
+    }
+  }
+}

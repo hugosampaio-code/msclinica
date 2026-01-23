@@ -1,0 +1,256 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Hero Section",
+  "type": "section",
+  "content": [
+    {
+      "id": "hero_section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "height": "viewport",
+        "background_background": "gradient",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135
+        },
+        "background_gradient_color_a": "#2D2D2D",
+        "background_gradient_color_b": "#333333",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(45,45,45,0.7)",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "elements": [
+        {
+          "id": "hero_container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "gap": {
+              "unit": "px",
+              "size": 30
+            },
+            "padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 20,
+              "bottom": 0,
+              "left": 20
+            }
+          },
+          "elements": [
+            {
+              "id": "hero_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "O Luxo de se Sentir Bem",
+                "header_size": "h1",
+                "color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 60,
+                  "sizes": {
+                    "desktop": 60,
+                    "tablet": 48,
+                    "mobile": 36
+                  }
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "align": "center",
+                "motion_fx_motion_fx_scrolling": "yes",
+                "motion_fx_translateY": {
+                  "direction": "out-in",
+                  "speed": {
+                    "unit": "px",
+                    "size": 4
+                  }
+                }
+              }
+            },
+            {
+              "id": "hero_subtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Especialistas em Saúde, Beleza e Bem-Estar no Porto",
+                "text_color": "#F5F5F5",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": {
+                    "desktop": 24,
+                    "tablet": 20,
+                    "mobile": 18
+                  }
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4
+                },
+                "align": "center",
+                "motion_fx_motion_fx_scrolling": "yes",
+                "motion_fx_translateY": {
+                  "direction": "out-in",
+                  "speed": {
+                    "unit": "px",
+                    "size": 3
+                  }
+                }
+              }
+            },
+            {
+              "id": "hero_buttons_container",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_justify_content": "center",
+                "gap": {
+                  "unit": "px",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "hero_cta_button",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Marcar Consulta",
+                    "selected_icon": {
+                      "value": "far fa-calendar-alt",
+                      "library": "fa-regular"
+                    },
+                    "icon_align": "left",
+                    "link": {
+                      "url": "#marcar-consulta",
+                      "is_external": false
+                    },
+                    "size": "lg",
+                    "button_type": "primary",
+                    "button_background_color": "#D4A84B",
+                    "button_text_color": "#2D2D2D",
+                    "button_background_hover_color": "#B89239",
+                    "button_hover_text_color": "#FFFFFF",
+                    "button_border_radius": {
+                      "unit": "px",
+                      "size": 50
+                    },
+                    "button_padding": {
+                      "unit": "px",
+                      "top": 15,
+                      "right": 40,
+                      "bottom": 15,
+                      "left": 40
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.5
+                    },
+                    "hover_animation": "grow",
+                    "button_box_shadow_box_shadow_type": {
+                      "hover": "yes"
+                    },
+                    "button_box_shadow_box_shadow": {
+                      "hover": {
+                        "horizontal": 0,
+                        "vertical": 5,
+                        "blur": 15,
+                        "spread": 0,
+                        "color": "rgba(212,168,75,0.3)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "hero_call_button",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Ligar Agora",
+                    "selected_icon": {
+                      "value": "fas fa-phone",
+                      "library": "fa-solid"
+                    },
+                    "icon_align": "left",
+                    "link": {
+                      "url": "tel:+351220925250",
+                      "is_external": false
+                    },
+                    "size": "lg",
+                    "button_type": "outline",
+                    "button_background_color": "transparent",
+                    "button_text_color": "#D4A84B",
+                    "button_border_color": "#D4A84B",
+                    "button_background_hover_color": "#D4A84B",
+                    "button_hover_text_color": "#FFFFFF",
+                    "button_hover_border_color": "#D4A84B",
+                    "button_border_width": {
+                      "unit": "px",
+                      "size": 2
+                    },
+                    "button_border_radius": {
+                      "unit": "px",
+                      "size": 50
+                    },
+                    "button_padding": {
+                      "unit": "px",
+                      "top": 15,
+                      "right": 40,
+                      "bottom": 15,
+                      "left": 40
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.5
+                    },
+                    "hover_animation": "grow"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "hero_buttons_container": {
+        "flex_direction": "column"
+      },
+      "button_width": "100%"
+    }
+  }
+}

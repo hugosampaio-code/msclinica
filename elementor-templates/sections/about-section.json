@@ -1,0 +1,214 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - About Section",
+  "type": "section",
+  "content": [
+    {
+      "id": "about_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 0,
+          "bottom": 80,
+          "left": 0,
+          "sizes": {
+            "tablet": {
+              "top": 60,
+              "bottom": 60
+            },
+            "mobile": {
+              "top": 40,
+              "bottom": 40
+            }
+          }
+        }
+      },
+      "elements": [
+        {
+          "id": "about_header_container",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "margin": {
+              "unit": "px",
+              "bottom": 60,
+              "sizes": {
+                "mobile": {
+                  "bottom": 40
+                }
+              }
+            }
+          },
+          "elements": [
+            {
+              "id": "about_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Sobre Nós",
+                "header_size": "h2",
+                "color": "#2D2D2D",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": {
+                    "tablet": 36,
+                    "mobile": 30
+                  }
+                },
+                "typography_font_weight": "600",
+                "align": "center",
+                "margin": {
+                  "unit": "px",
+                  "bottom": 15
+                }
+              }
+            },
+            {
+              "id": "about_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "weight": {
+                  "unit": "px",
+                  "size": 4
+                },
+                "color": "#D4A84B",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "about_content_container",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_align_items": "center",
+            "gap": {
+              "unit": "px",
+              "size": 60,
+              "sizes": {
+                "mobile": {
+                  "size": 40
+                }
+              }
+            }
+          },
+          "elements": [
+            {
+              "id": "about_text_column",
+              "elType": "container",
+              "settings": {
+                "flex_basis": "50%",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "about_text_content",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>A <strong>MS Clínica (Malheiro & Sampaio)</strong> é uma clínica multidisciplinar localizada na Maia, Porto, dedicada a proporcionar cuidados de saúde premium em diversas áreas.</p><p>Com uma equipa altamente qualificada e experiente, combinamos tecnologia de ponta com atendimento personalizado para garantir os melhores resultados aos nossos pacientes.</p><p>Oferecemos uma vasta gama de serviços que abrangem <strong>Medicina Estética</strong>, <strong>Medicina Dentária</strong>, <strong>Terapias & Especialidades</strong> e <strong>Medicina Integrativa</strong>, sempre com foco no bem-estar integral de cada pessoa.</p><p>Na MS Clínica, acreditamos que cuidar de si é um investimento no seu futuro. Venha experimentar <em>o luxo de se sentir bem</em>.</p>",
+                    "text_color": "#555555",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.8
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "about_image_column",
+              "elType": "container",
+              "settings": {
+                "flex_basis": "50%",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "about_image_placeholder",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "",
+                      "id": ""
+                    },
+                    "image_size": "large",
+                    "border_border": "dashed",
+                    "border_width": {
+                      "unit": "px",
+                      "size": 2
+                    },
+                    "border_color": "#D4A84B",
+                    "border_radius": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F5F5F5",
+                    "padding": {
+                      "unit": "px",
+                      "top": 80,
+                      "right": 40,
+                      "bottom": 80,
+                      "left": 40
+                    },
+                    "caption_text": "Imagem da Clínica",
+                    "caption_position": "center"
+                  }
+                },
+                {
+                  "id": "about_image_fallback",
+                  "elType": "widget",
+                  "widgetType": "icon",
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-hospital-alt",
+                      "library": "fa-solid"
+                    },
+                    "icon_color": "#D4A84B",
+                    "icon_size": {
+                      "unit": "px",
+                      "size": 80
+                    },
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "about_content_container": {
+        "flex_direction": "column"
+      },
+      "column_basis": "100%"
+    }
+  },
+  "notes": "Substitua o placeholder da imagem por uma foto real da clínica MS. Recomenda-se imagem de alta qualidade mostrando as instalações ou equipa."
+}

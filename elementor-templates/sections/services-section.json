@@ -1,0 +1,467 @@
+{
+  "version": "1.0.0",
+  "title": "MS Clínica - Services Section",
+  "type": "section",
+  "content": [
+    {
+      "id": "services_section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 0,
+          "bottom": 80,
+          "left": 0,
+          "sizes": {
+            "tablet": {
+              "top": 60,
+              "bottom": 60
+            },
+            "mobile": {
+              "top": 40,
+              "bottom": 40
+            }
+          }
+        }
+      },
+      "elements": [
+        {
+          "id": "services_header",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "margin": {
+              "unit": "px",
+              "bottom": 60,
+              "sizes": {
+                "mobile": {
+                  "bottom": 40
+                }
+              }
+            }
+          },
+          "elements": [
+            {
+              "id": "services_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "As Nossas Especialidades",
+                "header_size": "h2",
+                "color": "#2D2D2D",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": {
+                    "tablet": 36,
+                    "mobile": 30
+                  }
+                },
+                "typography_font_weight": "600",
+                "align": "center",
+                "margin": {
+                  "unit": "px",
+                  "bottom": 15
+                }
+              }
+            },
+            {
+              "id": "services_divider",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "width": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "weight": {
+                  "unit": "px",
+                  "size": 4
+                },
+                "color": "#D4A84B",
+                "align": "center",
+                "margin": {
+                  "unit": "px",
+                  "bottom": 20
+                }
+              }
+            },
+            {
+              "id": "services_description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Serviços premium para cuidar de si de forma integral",
+                "text_color": "#555555",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "services_grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "gap": {
+              "unit": "px",
+              "size": 30
+            }
+          },
+          "elements": [
+            {
+              "id": "service_card_1",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-spa",
+                  "library": "fa-solid"
+                },
+                "title_text": "Medicina Estética",
+                "description_text": "Tratamentos avançados de beleza e rejuvenescimento facial e corporal, incluindo Botox, preenchimentos, mesoterapia e muito mais.",
+                "link": {
+                  "url": "#marcar-consulta",
+                  "custom_attributes": "Saber Mais"
+                },
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 40,
+                  "right": 30,
+                  "bottom": 40,
+                  "left": 30
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 5,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.08)"
+                },
+                "hover_animation": "float",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            },
+            {
+              "id": "service_card_2",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-tooth",
+                  "library": "fa-solid"
+                },
+                "title_text": "Medicina Dentária",
+                "description_text": "Saúde oral completa com implantologia, ortodontia, Invisalign®, branqueamento e todos os tratamentos dentários.",
+                "link": {
+                  "url": "#marcar-consulta",
+                  "custom_attributes": "Saber Mais"
+                },
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 40,
+                  "right": 30,
+                  "bottom": 40,
+                  "left": 30
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 5,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.08)"
+                },
+                "hover_animation": "float",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            },
+            {
+              "id": "service_card_3",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-heartbeat",
+                  "library": "fa-solid"
+                },
+                "title_text": "Terapias & Especialidades",
+                "description_text": "Fisioterapia, nutrição, psicologia, terapia da fala, medicina tradicional chinesa e transplantes capilares.",
+                "link": {
+                  "url": "#marcar-consulta",
+                  "custom_attributes": "Saber Mais"
+                },
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 40,
+                  "right": 30,
+                  "bottom": 40,
+                  "left": 30
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 5,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.08)"
+                },
+                "hover_animation": "float",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            },
+            {
+              "id": "service_card_4",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-flask",
+                  "library": "fa-solid"
+                },
+                "title_text": "Medicina Integrativa",
+                "description_text": "Medicina ortomolecular, soroterapia, mesoterapia homeopática, análises clínicas e tratamentos alternativos.",
+                "link": {
+                  "url": "#marcar-consulta",
+                  "custom_attributes": "Saber Mais"
+                },
+                "icon_view": "default",
+                "icon_shape": "circle",
+                "icon_color": "#FFFFFF",
+                "icon_background_color": "#D4A84B",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "icon_space": {
+                  "unit": "px",
+                  "size": 25
+                },
+                "title_color": "#2D2D2D",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "title_typography_font_weight": "600",
+                "title_space": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_color": "#555555",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": 40,
+                  "right": 30,
+                  "bottom": 40,
+                  "left": 30
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 5,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(0,0,0,0.08)"
+                },
+                "hover_animation": "float",
+                "position": "top",
+                "content_vertical_alignment": "top",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "responsive": {
+    "mobile": {
+      "services_grid": {
+        "flex_direction": "column"
+      },
+      "card_width": "100%"
+    }
+  }
+}
